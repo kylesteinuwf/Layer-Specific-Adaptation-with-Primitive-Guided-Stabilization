@@ -17,7 +17,7 @@ python main_lora.py clothing16k --lr 1e-4 --epochs 10 --num_tasks 5 --use_proto_
 
 ## Split-UT-Zappos
 ```bash  
-python main_lora.py ut_zappos --lr 1e-4 --epochs 15 --num_tasks 5 --use_proto_head --proto_temp 20.0 --proto_from seen_train --beta 0 --lora_rank_attr 8 --lora_rank_obj 8 --lora_rank_comp 8 --lora_alpha_attr 16.0 --lora_alpha_obj 16.0 --lora_alpha_comp 16.0 --lambda_comp 1.0 --lambda_attr 0.1 --lambda_obj 0.1 --attr_lr_multiplier 10.0 --head_lr_multiplier 1.0 --attr_layers "0:5" --obj_layers "5:8" --comp_layers "8:12" --per_task_adapters --transport_max_pairs 10000 --pgws_eta_both 0.20 --pgws_eta_one 0.10 --ensemble_alpha 0.1 --seed 42 
+python main_lora.py ut_zappos --lr 1e-4 --epochs 20 --num_tasks 5 --use_proto_head --proto_temp 20.0 --proto_from seen_train --beta 0 --lora_rank_attr 8 --lora_rank_obj 8 --lora_rank_comp 8 --lora_alpha_attr 16.0 --lora_alpha_obj 16.0 --lora_alpha_comp 16.0 --lambda_comp 1.0 --lambda_attr 0.1 --lambda_obj 0.1 --attr_lr_multiplier 10.0 --head_lr_multiplier 1.0 --attr_layers "0:5" --obj_layers "5:8" --comp_layers "8:12" --per_task_adapters --transport_max_pairs 4096 --transport_blend 1.0 --pgws_eta_both 0.20 --pgws_eta_one 0.10 --ensemble_alpha 0.1 --seed 42 --batch-size 8 
 ```
 
 ## Split-C-GQA
