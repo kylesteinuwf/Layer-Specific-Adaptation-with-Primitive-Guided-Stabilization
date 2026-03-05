@@ -1,14 +1,12 @@
 # Paper Title: 
 LSA-PAST: Layer-Specific Adaptation and Prototype Transport for Compositional Incremental Learning
-https://arxiv.org/pdf/2412.08755
+
 
 # Abstract:
 Class-Incremental Learning (CIL) enables models to recognize new classes over time while retaining prior knowledge, but many real-world problems are compositional, where visual concepts arise from combinations of primitives such as states (i.e., red, shiny) and objects (i.e., shoe, car). Standard CIL methods treat each composition as an independent class, ignoring shared primitives and providing no mechanism to stabilize their representations as new compositions arrive. This causes parameter updates to entangle primitives and induce drift that degrades performance on earlier compositions.  Compositional Incremental Learning (composition-IL) formalizes this setting by introducing new state–object compositions across tasks. In this paper, we propose Layer-Specific Adaptation with Prototype-Anchored Adapter-Space Transport (\textbf{LSA-PAST}), a parameter-efficient method tailored to composition-IL. LSA integrates Low-Rank Adaptation (LoRA) into a frozen ViT with depth-specialized adapters for states, objects, and compositions. PAST then maps past, anchored prototypes into the current adapter space through a rehearsal-free affine transform fit on current-task data, enabling old prototypes to remain compatible with new adapters. Extensive experiments across multiple benchmarks demonstrates that LSA-PAST achieves state-of-the-art performance for composition-IL.
-![My Image](<img width="702" height="355" alt="LSA_PAST" src="https://github.com/user-attachments/assets/a9efe2c3-f49d-4d82-a102-eb1fe2e8a654" />)
 
 # Datasets
 The method was ran on Split-UT-Zappos, Split-Clothing, and Split-C-GQA. The cleaned datasets can be found here at this google drive link. Attach the folder into the repo. 
-
 
 # Running the Scripts
 
