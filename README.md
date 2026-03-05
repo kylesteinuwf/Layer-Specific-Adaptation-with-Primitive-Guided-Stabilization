@@ -22,7 +22,7 @@ python main_lora.py ut_zappos --lr 1e-4 --epochs 15 --num_tasks 5 --use_proto_he
 
 ## Split-C-GQA
 ```bash  
-python main_lora.py cgqa --lr 1e-4 --epochs 10 --num_tasks 5 --use_proto_head --proto_temp 20.0 --proto_from seen_train --beta 0 --lora_rank_attr 8 --lora_rank_obj 8 --lora_rank_comp 8 --lora_alpha_attr 16.0 --lora_alpha_obj 16.0 --lora_alpha_comp 16.0 --lambda_comp 1.0 --lambda_attr 0.1 --lambda_obj 0.1 --attr_lr_multiplier 10.0 --head_lr_multiplier 1.0 --attr_layers "0:4" --obj_layers "4:9" --comp_layers "9:12" --per_task_adapters --transport_max_pairs 10000 --transport_blend 1.0 --pgws_eta_both 0.25 --pgws_eta_one 0.125 --ensemble_alpha 0.1 --seed 33
+python main_lora.py cgqa --lr 1e-4 --epochs 10 --num_tasks 5 --use_proto_head --proto_temp 20.0 --proto_from seen_train --beta 0 --lora_rank_attr 8 --lora_rank_obj 8 --lora_rank_comp 8 --lora_alpha_attr 16.0 --lora_alpha_obj 16.0 --lora_alpha_comp 16.0 --lambda_comp 1.0 --lambda_attr 0.1 --lambda_obj 0.1 --attr_lr_multiplier 10.0 --head_lr_multiplier 1.0 --attr_layers "0:4" --obj_layers "4:9" --comp_layers "9:12" --per_task_adapters --transport_max_pairs 10000 --pgws_eta_both 0.15 --pgws_eta_one 0.075 --ensemble_alpha 0.1 --seed 33
 ``` 
 
 # Acknowledgement
